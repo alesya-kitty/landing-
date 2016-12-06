@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #A9A9A9;
+  text-decoration: none;
 }
 
 h1, .h1,
@@ -60,11 +60,15 @@ h6, .h6 {
   padding: 7px 10px 0px 10px;
 }
 
+.fa-plus-circle span {
+  font-size: 18px;
+  }
+
 /*main part*/
-.clicked span {
-  color: #F0FFF0 !important;
-  background-color: #6495ED !important;
-  border: 1px solid #6495ED !important;
+.panel-menu-item span:active {
+  color: #F0FFF0;
+  background-color: #6495ED;
+  border: 1px solid #6495ED;
 }
 
 .panel-menu-close{
@@ -101,79 +105,182 @@ h6, .h6 {
   border: 1px solid #A9A9A9;
 }
 
-hr {
+.first-line {
   color: #5F9EA0;
   border-style: dashed;
   border-width: 1px;
-  width: 52%;
   height: 0;
-  margin: 20px 410px;
-  margin-bottom: 10px;
 }
 
 .panel-kvest {
-  padding-left: 21%;
+  padding-top: 10px;
+} 
+
+.panel-number {
+  padding: 0;
+  margin-top: 10px;
   padding-bottom: 10px;
 }
 
-.panel-button-number {
-  padding: 0 10px 8px 0px;
-  width: 54%;
+.panel-number a {
+  text-decoration: none;
 }
 
-button[type="button-number"] {
-  background-color: #F0F8FF;
-  border: none;
+.panel-kvest-item {
   color: #708090;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
+  background-color: #F0F8FF;
+  border: 1px solid #F0F8FF;
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
   display: inline-block;
   text-align: center;
-  font-size: 24px;
-  margin-left: 410px;
-  margin-right: -405px;
-  margin-bottom: 10px;
-  }
+  padding-top: 5px;
 
- button:hover {
+}
+
+.panel-kvest-item:hover {
   border: 1px solid #A9A9A9;
+}
+
+.panel-kvest-item:active {
+  color: #F0FFF0;
+  background-color: #6495ED;
+  border: 1px solid #6495ED;
   }
 
-  button:focus {
+.second-line {
+  color: #5F9EA0;
+  border-style: dashed;
+  border-width: 1px;
+  height: 0;
+}
+
+.panel-setting {
+  padding-top: 20px;
+}
+
+.panel-setting a {
+ text-decoration: none;
+}
+
+.setting-escort-item {
+  display: inline-block;
+}
+
+.setting-escort-item span {
+  color: #708090;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #F0F8FF;
+  border-radius: 24px;
+  background-color: #F0F8FF;
+}
+
+.setting-escort-item span:hover {
+  border: 1px solid #A9A9A9;
+}
+
+.setting-escort-item span:active {
+  color: #F0FFF0;
+  background-color: #6495ED;
+  border: 1px solid #6495ED;
+}
+
+ .drop-general-list {
+  padding-top: 60px;
+ }
+
+ .drop-list-item {
+  width: 100%;
+  height: 50px;
+  background-color: #F0F8FF;
+  color: #708090;
+  font-size: 22px;
+  padding-left: 20px;
+ }
+
+ .drop-list-item:focus {
+  outline: none;
+  background-color: #FAEBD7;
+  }
+
+  .general-item {
+    padding-left: 10px;
+  }
+
+  .first-setting {
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  .first-setting a {
+    color: #708090;
+  }
+
+  .title-kvest {
+    width: 100%;
+    clear: both;
+    float: left;
+    padding-bottom: 10px;
+  }
+
+  .title-kvest-item {
+    width: 100%;
+    height: 50px;
+    background-color: #F0F8FF;
+    margin-top: 10px;
+    border:0;
+    padding-left: 20px;
+
+  }
+
+  .title {
+    width: 100%;
+    color: #A9A9A9;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .title-kvest-item:focus {
     outline: none;
-  }
-
-  button:active {
-    color: #F0FFF0;
-    background-color: #6495ED;
-    border: 1px solid #6495ED;
-  }
-
-  .settings-escort {
-    padding-left: 21%;
-    padding-bottom: 20px;
-  }
-
-  .settings-escort span {
-   padding: 10px 20px 10px 20px;
-   border: 1px solid #F0F8FF;
-   border-radius: 24px;
-   background-color: #F0F8FF;
-   color: #708090;
-   width: 300px;
-   padding-top: 10px;
-  }
-
-  .settings-escort span:hover {
     border: 1px solid #A9A9A9;
   }
 
-  .settings-escort a {
-    text-decoration: none;
+  .select-teme {
+    margin-top: 50px;
   }
-  
+
+  .teme-item {
+    width: 50%;
+    height: 50px;
+    background-color: #F0F8FF;
+  }
+
+  .teme-item:focus {
+    outline: none;
+    background-color: #FAEBD7;
+  }
+
+  .teme-add {
+    margin-left: 24px;
+    background-color: #6495ED;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #F0F8FF;
+    border-radius: 24px;
+  }
+
+  .teme-add:focus {
+    outline: none;
+  }
+
+  .teme-add:hover {
+    border: 1px solid #A9A9A9;
+  }
+
+   
+
+
  
 
 
@@ -183,6 +290,9 @@ button[type="button-number"] {
 
 .container {
   max-width: 60rem;
+  border:0;
+  background-color: 
+
 }
 
 
